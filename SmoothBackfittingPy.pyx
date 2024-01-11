@@ -5,9 +5,7 @@ cimport sbf
 import numpy as np
 import cython
 
-def SBF_CPP(double[:] Y, double[:,:] X, double[:] output):
-    n = X.shape[0]
-    d = X.shape[1]
+def SBF_CPP(double[:] Y, double[:,:] X, double[:] output, int n, int d):
     #output_mat = np.zeros((dim1,dim2))
     #output_mat = output_mat.astype(float)
     #narr_view = cython.declare(cython.float[:, :, :], output_mat)
