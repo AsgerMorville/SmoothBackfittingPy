@@ -14,7 +14,7 @@ def SBF_CPP(double[:] Y, double[:,:] X, double[:] output, int n, int d):
     sbf.sbfWrapper(&Y[0],&X[0,0], &output[0], n, d)
     return
 
-def SBF_test(double[:] Y, double[:,:] X):
+def SBF_test(Y, X):
     n, d = X.shape
     output_vec = np.zeros(n)
     SBF_CPP(Y, X, output_vec, n, d)
