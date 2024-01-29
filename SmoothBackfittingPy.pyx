@@ -6,6 +6,8 @@ import numpy as np
 import cython
 
 def SBF_CPP(double[:] Y, double[:,:] X, double[:] output, int n, int d):
+    print("TEST")
+    print(Y)
     sbf.sbfWrapper(&Y[0],&X[0,0], &output[0], n, d)
     return
 
