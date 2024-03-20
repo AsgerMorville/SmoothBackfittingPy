@@ -1,7 +1,7 @@
 from distutils.core import setup
 from distutils.extension import Extension
 
-USE_CYTHON = False
+USE_CYTHON = True
 
 if USE_CYTHON:
     from Cython.Build import cythonize
